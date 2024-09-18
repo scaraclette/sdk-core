@@ -1,0 +1,16 @@
+[package]
+name = "client-rs-example"
+version = "0.1.0"
+edition = "2021"
+license.workspace = true
+license-file.workspace = true
+
+[dependencies]
+temporal-sdk = { path = "../sdk" }
+temporal-sdk-core = { path = "../core" }
+temporal-sdk-core-api = { path = "../core-api" }
+temporal-client = { path = "../client" }
+tokio = { version = "1.26", features = ["full"] }
+
+[lints]
+workspace = true
